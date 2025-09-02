@@ -74,3 +74,26 @@ O conjunto de dados cobre cerca de 4,5 meses com registros a cada 10 minutos:
 27. Tdewpoint (from Chievres weather station), Â°C
 28. rv1, Random variable 1, nondimensional
 29. rv2, Random variable 2, nondimensional
+
+## PARTE 4 - Exercícios no Orange Data Mining
+
+#### 36. Importação e visualização inicial
+- **Pergunta**: Quantas variáveis e registros aparecem?
+  - **Resposta**: O conjunto de dados contém 2.075.259 registros e 9 variáveis: date, time, global_active_power, global_reactive_power, voltage, global_intensity, sub_metering_1, sub_metering_2, sub_metering_3.
+
+#### 37. Amostragem de dados (1%)
+- **Pergunta**: A distribuição de Global_active_power na amostra é semelhante à base completa?
+  - **Resposta**: Sim, a distribuição do consumo de global_active_power é concentrada principalmente entre 0 e 5 kilowatts, com as diferenças (naturalmente) sendo mais visíveis em termos de escala.
+
+#### 38. Distribuição do consumo
+- **Pergunta**: O consumo é concentrado em valores baixos ou há muitos registros de alto consumo?
+  - **Resposta**: A maioria dos registros está concentrada em valores baixos de consumo, variando entre 0 e 5 kilowatts.
+
+#### 39. Relação entre variáveis elétricas
+- **Pergunta**: Existe correlação visível entre Voltage (X) e Global_intensity (Y)?
+  - **Resposta**: Há uma relação clara entre voltagem (235 a 245) e global_intensity (0 a 17), com um agrupamento denso de pontos na parte inferior do gráfico.
+
+#### 40. Clustering com K-Means
+- **Pergunta**: Cada cluster representa um padrão distinto de consumo doméstico?
+  - **Resposta**: Os clusters identificados representam padrões de consumo distintos, como: baixo consumo (Cluster 1), consumo moderado com picos (Cluster 2), e alto consumo com maior variação (Cluster 3).
+
